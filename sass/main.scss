@@ -1,0 +1,132 @@
+/* Browsers Default CSS Reset */
+@import "/reset.scss";
+
+/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "/normalize.scss";
+
+/* colors variables */
+$grey-font: #9a9a9a;
+$white-font: #fff;
+$form-font: #303030;
+
+/* global CSS */
+html{
+    font: 14pt normal Arial, sans-serif;
+    background: url('../images/background.png');
+}
+
+/* local CSS */
+#container{
+    margin: auto;
+    width: 426px;
+}
+#title{
+    width: 426px;
+    height: 70px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background: url('../images/title.png') center center no-repeat; 
+}
+.addTask{
+    width: 368px;
+    height: 50px;
+    background: url('../images/field.png') no-repeat;
+    font: 1.3em;
+    color: $grey-font; 
+    line-height: 50px;
+    padding-left: 58px;
+    cursor: pointer;   
+}
+.addTaskForm{
+    @extend .addTask;
+    color: $form-font;
+}
+.taskIsNotDone{
+    width: 426px;
+    height: 50px;
+    cursor: pointer;
+    background: url('../images/field.png') no-repeat;
+    color: $white-font;
+}
+.taskIsNotDone:hover td[data-style="delete-icon"]{
+    width: 60px;
+    height: 47px;
+    background: url('../images/close.png') center center no-repeat;
+}
+.taskIsDone{
+    @extend .taskIsNotDone;
+    color: $grey-font;
+    text-decoration: line-through;
+}
+.dotted-line{
+    width: 426px;
+    height: 3px;
+    background: url('../images/dotted_line.png') no-repeat;
+}
+.taskName{
+    width: 306px;
+    height: 47px;
+    line-height: 47px;
+    vertical-align: top;
+}
+.taskIsNotDoneIcon{
+    width: 60px;
+    height: 47px;
+    background: url('../images/box.png') center center no-repeat;
+}
+.taskIsDoneIcon{
+    @extend .taskIsNotDoneIcon;
+    background: url('../images/box_x.png') center center no-repeat;
+}
+.editTaskName{
+    color: $form-font;
+}
+.closeIcon{
+    width: 60px;
+    height: 47px;
+    background: url('../images/close.png') center center no-repeat;
+}
+.nonVisible{
+    visibility: hidden;
+}
+.nonDisplayed{
+    display: none;  
+}
+.shaddowBottom{
+    width: 426px;
+    height: 15px;
+    background: url('../images/shaddow_bottom.png') no-repeat;
+}
+.shaddowBottom *{
+    @extend .nonDisplayed;
+}
+.navi{
+    width: 426px;
+    height: 36px;
+    background: url('../images/shaddow_bottom.png') no-repeat, url('../images/background_navi.png') no-repeat;
+    font-size: 0.7em;
+    color: $grey-font; 
+    padding-top: 14px;
+    text-align: center;  
+}
+.itemsMenu{
+    height: 50px;
+}
+.itemsMenu>span{
+    cursor: pointer;
+}
+.menuItemAll, .menuItemActive, .menuItemCompleted{
+    color: $white-font;
+}
+.itemsLeft{
+    height: 50px;
+    margin-left: 21px;
+    float: left;
+}
+.itemsCompleted{
+    height: 50px;
+    margin-right: 21px;
+    float: right;
+}

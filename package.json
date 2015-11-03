@@ -1,0 +1,31 @@
+{
+  "name": "codex",
+  "version": "1.0.0",
+  "description": "codex software test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aliaksei Zhurauski",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.16.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "http-server": "^0.8.0",
+    "json-loader": "^0.5.2",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.2.0",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.8",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2"
+  }
+}
